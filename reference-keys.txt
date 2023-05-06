@@ -430,3 +430,4 @@ teach-day1
 licensing-your-content
 remixing-licensed-content
 community
+code-highlighting
