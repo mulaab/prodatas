@@ -1,21 +1,23 @@
 --- 
 title: "rstudio4edu"
-subtitle: "A Handbook for Teaching and Learning with R and RStudio"
-author: 
+author:
 - Desirée De Leon^[RStudio, https://desiree.rbind.io/]
 - Alison Hill^[RStudio, https://alison.rbind.io/]
 date: "2023-05-06"
+subtitle: A Handbook for Teaching and Learning with R and RStudio
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography:
+- book.bib
+- packages.bib
 biblio-style: apalike
 link-citations: yes
-cover-image: images/logo/logo-rstudio4edu.png
+cover-image: "images/logo/logo-rstudio4edu.png"
 github-repo: "rstudio4edu/rstudio4edu-book"
 description: "A work-in-progress"
-favicon: "images/favicon/favicon.ico"
+favicon: images/favicon/favicon.ico
 always_allow_html: yes
-url: 'https\://rstudio4edu.github.io/rstudio4edu-book/'
+url: "https\\://rstudio4edu.github.io/rstudio4edu-book/"
 ---
 
 # Preface {-}
