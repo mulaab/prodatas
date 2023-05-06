@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 27 Make a site for a workshop | rstudio4edu</title>
+  <title>Chapter 18 Make a Distill site | rstudio4edu</title>
   <meta name="description" content="A work-in-progress" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 27 Make a site for a workshop | rstudio4edu" />
+  <meta property="og:title" content="Chapter 18 Make a Distill site | rstudio4edu" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://rstudio4edu.github.io/rstudio4edu-book//images/logo/logo-rstudio4edu.png" />
   <meta property="og:description" content="A work-in-progress" />
-  <meta name="github-repo" content="Chapter 27 Make a site for a workshop | rstudio4edu/rstudio4edu-book" />
+  <meta name="github-repo" content="Chapter 18 Make a Distill site | rstudio4edu/rstudio4edu-book" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 27 Make a site for a workshop | rstudio4edu" />
+  <meta name="twitter:title" content="Chapter 18 Make a Distill site | rstudio4edu" />
   
   <meta name="twitter:description" content="A work-in-progress" />
   <meta name="twitter:image" content="https://rstudio4edu.github.io/rstudio4edu-book//images/logo/logo-rstudio4edu.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="make-blogdown.html"/>
-<link rel="next" href="make-a-site-for-a-course.html"/>
+<link rel="prev" href="intro-distill.html"/>
+<link rel="next" href="distill-yours.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -80,6 +80,69 @@
 <script src="libs/leaflet-binding-2.1.2/leaflet.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
@@ -400,83 +463,86 @@
 <ul>
 <li class="chapter" data-level="17.9.1" data-path="intro-distill.html"><a href="intro-distill.html#existing-distill-sites"><i class="fa fa-check"></i><b>17.9.1</b> Existing Distill sites</a></li>
 </ul></li>
-<li class="chapter" data-level="17.10" data-path="intro-distill.html"><a href="intro-distill.html#tldr-2"><i class="fa fa-check"></i><b>17.10</b> tl;dr</a></li>
-<li class="chapter" data-level="17.11" data-path="intro-distill.html"><a href="intro-distill.html#distill-site-setup"><i class="fa fa-check"></i><b>17.11</b> Getting set up</a>
-<ul>
-<li class="chapter" data-level="17.11.1" data-path="intro-distill.html"><a href="intro-distill.html#packages-1"><i class="fa fa-check"></i><b>17.11.1</b> Packages</a></li>
-<li class="chapter" data-level="17.11.2" data-path="intro-distill.html"><a href="intro-distill.html#distill-proj-first"><i class="fa fa-check"></i><b>17.11.2</b> Make a project</a></li>
-<li class="chapter" data-level="17.11.3" data-path="intro-distill.html"><a href="intro-distill.html#distill-site-skeleton"><i class="fa fa-check"></i><b>17.11.3</b> Make a Distill site skeleton</a></li>
 </ul></li>
-<li class="chapter" data-level="17.12" data-path="intro-distill.html"><a href="intro-distill.html#distill-site-orientation"><i class="fa fa-check"></i><b>17.12</b> A mini-orientation</a></li>
-<li class="chapter" data-level="17.13" data-path="intro-distill.html"><a href="intro-distill.html#distill-push"><i class="fa fa-check"></i><b>17.13</b> Push to GitHub</a></li>
-<li class="chapter" data-level="17.14" data-path="intro-distill.html"><a href="intro-distill.html#distill-site-build"><i class="fa fa-check"></i><b>17.14</b> Build your site</a></li>
-<li class="chapter" data-level="17.15" data-path="intro-distill.html"><a href="intro-distill.html#distill-push2"><i class="fa fa-check"></i><b>17.15</b> Push to GitHub (again)</a></li>
-<li class="chapter" data-level="17.16" data-path="intro-distill.html"><a href="intro-distill.html#distill-living"><i class="fa fa-check"></i><b>17.16</b> Make a living, breathing site!</a></li>
-<li class="chapter" data-level="17.17" data-path="intro-distill.html"><a href="intro-distill.html#distill-uplevel"><i class="fa fa-check"></i><b>17.17</b> Uplevel your workflow</a></li>
+<li class="chapter" data-level="18" data-path="make-distill.html"><a href="make-distill.html"><i class="fa fa-check"></i><b>18</b> Make a Distill site</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="make-distill.html"><a href="make-distill.html#tldr-2"><i class="fa fa-check"></i><b>18.1</b> tl;dr</a></li>
+<li class="chapter" data-level="18.2" data-path="make-distill.html"><a href="make-distill.html#distill-site-setup"><i class="fa fa-check"></i><b>18.2</b> Getting set up</a>
+<ul>
+<li class="chapter" data-level="18.2.1" data-path="make-distill.html"><a href="make-distill.html#packages-1"><i class="fa fa-check"></i><b>18.2.1</b> Packages</a></li>
+<li class="chapter" data-level="18.2.2" data-path="make-distill.html"><a href="make-distill.html#distill-proj-first"><i class="fa fa-check"></i><b>18.2.2</b> Make a project</a></li>
+<li class="chapter" data-level="18.2.3" data-path="make-distill.html"><a href="make-distill.html#distill-site-skeleton"><i class="fa fa-check"></i><b>18.2.3</b> Make a Distill site skeleton</a></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="distill-yours.html"><a href="distill-yours.html"><i class="fa fa-check"></i><b>18</b> Make it yours</a>
-<ul>
-<li class="chapter" data-level="18.1" data-path="distill-yours.html"><a href="distill-yours.html#add-distill"><i class="fa fa-check"></i><b>18.1</b> Adding new Distill articles</a></li>
-<li class="chapter" data-level="18.2" data-path="distill-yours.html"><a href="distill-yours.html#distill-grow"><i class="fa fa-check"></i><b>18.2</b> Grow your navbar</a></li>
+<li class="chapter" data-level="18.3" data-path="make-distill.html"><a href="make-distill.html#distill-site-orientation"><i class="fa fa-check"></i><b>18.3</b> A mini-orientation</a></li>
+<li class="chapter" data-level="18.4" data-path="make-distill.html"><a href="make-distill.html#distill-push"><i class="fa fa-check"></i><b>18.4</b> Push to GitHub</a></li>
+<li class="chapter" data-level="18.5" data-path="make-distill.html"><a href="make-distill.html#distill-site-build"><i class="fa fa-check"></i><b>18.5</b> Build your site</a></li>
+<li class="chapter" data-level="18.6" data-path="make-distill.html"><a href="make-distill.html#distill-push2"><i class="fa fa-check"></i><b>18.6</b> Push to GitHub (again)</a></li>
+<li class="chapter" data-level="18.7" data-path="make-distill.html"><a href="make-distill.html#distill-living"><i class="fa fa-check"></i><b>18.7</b> Make a living, breathing site!</a></li>
+<li class="chapter" data-level="18.8" data-path="make-distill.html"><a href="make-distill.html#distill-uplevel"><i class="fa fa-check"></i><b>18.8</b> Uplevel your workflow</a></li>
 </ul></li>
-<li class="chapter" data-level="19" data-path="distill-care.html"><a href="distill-care.html"><i class="fa fa-check"></i><b>19</b> Caring for your Distill site</a>
+<li class="chapter" data-level="19" data-path="distill-yours.html"><a href="distill-yours.html"><i class="fa fa-check"></i><b>19</b> Make it yours</a>
 <ul>
-<li class="chapter" data-level="19.1" data-path="distill-care.html"><a href="distill-care.html#hide-distill"><i class="fa fa-check"></i><b>19.1</b> Hiding pages</a>
-<ul>
-<li class="chapter" data-level="19.1.1" data-path="distill-care.html"><a href="distill-care.html#switching-from-an-existing-r-markdown-site-to-a-distill-site"><i class="fa fa-check"></i><b>19.1.1</b> Switching from an existing R Markdown site to a Distill site</a></li>
+<li class="chapter" data-level="19.1" data-path="distill-yours.html"><a href="distill-yours.html#add-distill"><i class="fa fa-check"></i><b>19.1</b> Adding new Distill articles</a></li>
+<li class="chapter" data-level="19.2" data-path="distill-yours.html"><a href="distill-yours.html#distill-grow"><i class="fa fa-check"></i><b>19.2</b> Grow your navbar</a></li>
 </ul></li>
-<li class="chapter" data-level="19.2" data-path="distill-care.html"><a href="distill-care.html#alternatives-and-drawbacks"><i class="fa fa-check"></i><b>19.2</b> Alternatives and drawbacks</a></li>
-<li class="chapter" data-level="19.3" data-path="distill-care.html"><a href="distill-care.html#using-your-distill-site"><i class="fa fa-check"></i><b>19.3</b> Using your Distill site</a></li>
-<li class="chapter" data-level="19.4" data-path="distill-care.html"><a href="distill-care.html#distill-features"><i class="fa fa-check"></i><b>19.4</b> Distill features</a>
+<li class="chapter" data-level="20" data-path="distill-care.html"><a href="distill-care.html"><i class="fa fa-check"></i><b>20</b> Caring for your Distill site</a>
 <ul>
-<li class="chapter" data-level="19.4.1" data-path="distill-care.html"><a href="distill-care.html#authors-and-affiliations"><i class="fa fa-check"></i><b>19.4.1</b> Authors and affiliations</a></li>
-<li class="chapter" data-level="19.4.2" data-path="distill-care.html"><a href="distill-care.html#citations"><i class="fa fa-check"></i><b>19.4.2</b> Citations</a></li>
-<li class="chapter" data-level="19.4.3" data-path="distill-care.html"><a href="distill-care.html#hoverable-footnotes"><i class="fa fa-check"></i><b>19.4.3</b> Hoverable footnotes</a></li>
-<li class="chapter" data-level="19.4.4" data-path="distill-care.html"><a href="distill-care.html#asides"><i class="fa fa-check"></i><b>19.4.4</b> Asides</a></li>
-<li class="chapter" data-level="19.4.5" data-path="distill-care.html"><a href="distill-care.html#figure-width"><i class="fa fa-check"></i><b>19.4.5</b> Figure width</a></li>
-<li class="chapter" data-level="19.4.6" data-path="distill-care.html"><a href="distill-care.html#figure-captions-and-cross-references"><i class="fa fa-check"></i><b>19.4.6</b> Figure captions and cross-references</a></li>
-<li class="chapter" data-level="19.4.7" data-path="distill-care.html"><a href="distill-care.html#if-you-like-distill"><i class="fa fa-check"></i><b>19.4.7</b> If you like Distill…</a></li>
+<li class="chapter" data-level="20.1" data-path="distill-care.html"><a href="distill-care.html#hide-distill"><i class="fa fa-check"></i><b>20.1</b> Hiding pages</a>
+<ul>
+<li class="chapter" data-level="20.1.1" data-path="distill-care.html"><a href="distill-care.html#switching-from-an-existing-r-markdown-site-to-a-distill-site"><i class="fa fa-check"></i><b>20.1.1</b> Switching from an existing R Markdown site to a Distill site</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="20" data-path="distill-dress.html"><a href="distill-dress.html"><i class="fa fa-check"></i><b>20</b> Dress it up!</a>
+<li class="chapter" data-level="20.2" data-path="distill-care.html"><a href="distill-care.html#alternatives-and-drawbacks"><i class="fa fa-check"></i><b>20.2</b> Alternatives and drawbacks</a></li>
+<li class="chapter" data-level="20.3" data-path="distill-care.html"><a href="distill-care.html#using-your-distill-site"><i class="fa fa-check"></i><b>20.3</b> Using your Distill site</a></li>
+<li class="chapter" data-level="20.4" data-path="distill-care.html"><a href="distill-care.html#distill-features"><i class="fa fa-check"></i><b>20.4</b> Distill features</a>
 <ul>
-<li class="chapter" data-level="20.1" data-path="distill-dress.html"><a href="distill-dress.html#site-sections"><i class="fa fa-check"></i><b>20.1</b> Site sections</a>
-<ul>
-<li class="chapter" data-level="20.1.1" data-path="distill-dress.html"><a href="distill-dress.html#site-footer"><i class="fa fa-check"></i><b>20.1.1</b> Site footer</a></li>
-<li class="chapter" data-level="20.1.2" data-path="distill-dress.html"><a href="distill-dress.html#appendix"><i class="fa fa-check"></i><b>20.1.2</b> Appendix</a></li>
-</ul></li>
-<li class="chapter" data-level="20.2" data-path="distill-dress.html"><a href="distill-dress.html#sharing-1"><i class="fa fa-check"></i><b>20.2</b> Sharing</a>
-<ul>
-<li class="chapter" data-level="20.2.1" data-path="distill-dress.html"><a href="distill-dress.html#reuse-and-licencing"><i class="fa fa-check"></i><b>20.2.1</b> Reuse and licencing</a></li>
-<li class="chapter" data-level="20.2.2" data-path="distill-dress.html"><a href="distill-dress.html#preview-images"><i class="fa fa-check"></i><b>20.2.2</b> Preview images</a></li>
-<li class="chapter" data-level="20.2.3" data-path="distill-dress.html"><a href="distill-dress.html#logo-1"><i class="fa fa-check"></i><b>20.2.3</b> Logo</a></li>
-<li class="chapter" data-level="20.2.4" data-path="distill-dress.html"><a href="distill-dress.html#favicon"><i class="fa fa-check"></i><b>20.2.4</b> Favicon</a></li>
-<li class="chapter" data-level="20.2.5" data-path="distill-dress.html"><a href="distill-dress.html#google-analytics"><i class="fa fa-check"></i><b>20.2.5</b> Google analytics</a></li>
-<li class="chapter" data-level="20.2.6" data-path="distill-dress.html"><a href="distill-dress.html#getting-edits"><i class="fa fa-check"></i><b>20.2.6</b> Getting edits</a></li>
+<li class="chapter" data-level="20.4.1" data-path="distill-care.html"><a href="distill-care.html#authors-and-affiliations"><i class="fa fa-check"></i><b>20.4.1</b> Authors and affiliations</a></li>
+<li class="chapter" data-level="20.4.2" data-path="distill-care.html"><a href="distill-care.html#citations"><i class="fa fa-check"></i><b>20.4.2</b> Citations</a></li>
+<li class="chapter" data-level="20.4.3" data-path="distill-care.html"><a href="distill-care.html#hoverable-footnotes"><i class="fa fa-check"></i><b>20.4.3</b> Hoverable footnotes</a></li>
+<li class="chapter" data-level="20.4.4" data-path="distill-care.html"><a href="distill-care.html#asides"><i class="fa fa-check"></i><b>20.4.4</b> Asides</a></li>
+<li class="chapter" data-level="20.4.5" data-path="distill-care.html"><a href="distill-care.html#figure-width"><i class="fa fa-check"></i><b>20.4.5</b> Figure width</a></li>
+<li class="chapter" data-level="20.4.6" data-path="distill-care.html"><a href="distill-care.html#figure-captions-and-cross-references"><i class="fa fa-check"></i><b>20.4.6</b> Figure captions and cross-references</a></li>
+<li class="chapter" data-level="20.4.7" data-path="distill-care.html"><a href="distill-care.html#if-you-like-distill"><i class="fa fa-check"></i><b>20.4.7</b> If you like Distill…</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="21" data-path="distill-fancy.html"><a href="distill-fancy.html"><i class="fa fa-check"></i><b>21</b> Make it fancier</a>
+<li class="chapter" data-level="21" data-path="distill-dress.html"><a href="distill-dress.html"><i class="fa fa-check"></i><b>21</b> Dress it up!</a>
 <ul>
-<li class="chapter" data-level="21.1" data-path="distill-fancy.html"><a href="distill-fancy.html#before-you-begin-3"><i class="fa fa-check"></i><b>21.1</b> Before you begin</a></li>
-<li class="chapter" data-level="21.2" data-path="distill-fancy.html"><a href="distill-fancy.html#anatomy-of-a-fancy-distill-page"><i class="fa fa-check"></i><b>21.2</b> Anatomy of a fancy Distill page</a></li>
-<li class="chapter" data-level="21.3" data-path="distill-fancy.html"><a href="distill-fancy.html#adding-custom-css-to-your-site-1"><i class="fa fa-check"></i><b>21.3</b> Adding custom CSS to your site</a></li>
-<li class="chapter" data-level="21.4" data-path="distill-fancy.html"><a href="distill-fancy.html#aesthetics-and-branding-1"><i class="fa fa-check"></i><b>21.4</b> Aesthetics and branding</a>
+<li class="chapter" data-level="21.1" data-path="distill-dress.html"><a href="distill-dress.html#site-sections"><i class="fa fa-check"></i><b>21.1</b> Site sections</a>
 <ul>
-<li class="chapter" data-level="21.4.1" data-path="distill-fancy.html"><a href="distill-fancy.html#google-fonts"><i class="fa fa-check"></i><b>21.4.1</b> Google Fonts</a></li>
-<li class="chapter" data-level="21.4.2" data-path="distill-fancy.html"><a href="distill-fancy.html#larger-logo"><i class="fa fa-check"></i><b>21.4.2</b> Larger logo</a></li>
+<li class="chapter" data-level="21.1.1" data-path="distill-dress.html"><a href="distill-dress.html#site-footer"><i class="fa fa-check"></i><b>21.1.1</b> Site footer</a></li>
+<li class="chapter" data-level="21.1.2" data-path="distill-dress.html"><a href="distill-dress.html#appendix"><i class="fa fa-check"></i><b>21.1.2</b> Appendix</a></li>
 </ul></li>
-<li class="chapter" data-level="21.5" data-path="distill-fancy.html"><a href="distill-fancy.html#navbar"><i class="fa fa-check"></i><b>21.5</b> Navbar</a>
+<li class="chapter" data-level="21.2" data-path="distill-dress.html"><a href="distill-dress.html#sharing-1"><i class="fa fa-check"></i><b>21.2</b> Sharing</a>
 <ul>
-<li class="chapter" data-level="21.5.1" data-path="distill-fancy.html"><a href="distill-fancy.html#more-space-for-the-navbar"><i class="fa fa-check"></i><b>21.5.1</b> More space for the navbar</a></li>
-<li class="chapter" data-level="21.5.2" data-path="distill-fancy.html"><a href="distill-fancy.html#navbar-font-and-text-style"><i class="fa fa-check"></i><b>21.5.2</b> Navbar font and text style</a></li>
-<li class="chapter" data-level="21.5.3" data-path="distill-fancy.html"><a href="distill-fancy.html#transparent-faded-navbar"><i class="fa fa-check"></i><b>21.5.3</b> Transparent, faded navbar</a></li>
-<li class="chapter" data-level="21.5.4" data-path="distill-fancy.html"><a href="distill-fancy.html#animated-hovering"><i class="fa fa-check"></i><b>21.5.4</b> Animated hovering</a></li>
-<li class="chapter" data-level="21.5.5" data-path="distill-fancy.html"><a href="distill-fancy.html#tweak-for-mobile-1"><i class="fa fa-check"></i><b>21.5.5</b> Tweak for mobile</a></li>
+<li class="chapter" data-level="21.2.1" data-path="distill-dress.html"><a href="distill-dress.html#reuse-and-licencing"><i class="fa fa-check"></i><b>21.2.1</b> Reuse and licencing</a></li>
+<li class="chapter" data-level="21.2.2" data-path="distill-dress.html"><a href="distill-dress.html#preview-images"><i class="fa fa-check"></i><b>21.2.2</b> Preview images</a></li>
+<li class="chapter" data-level="21.2.3" data-path="distill-dress.html"><a href="distill-dress.html#logo-1"><i class="fa fa-check"></i><b>21.2.3</b> Logo</a></li>
+<li class="chapter" data-level="21.2.4" data-path="distill-dress.html"><a href="distill-dress.html#favicon"><i class="fa fa-check"></i><b>21.2.4</b> Favicon</a></li>
+<li class="chapter" data-level="21.2.5" data-path="distill-dress.html"><a href="distill-dress.html#google-analytics"><i class="fa fa-check"></i><b>21.2.5</b> Google analytics</a></li>
+<li class="chapter" data-level="21.2.6" data-path="distill-dress.html"><a href="distill-dress.html#getting-edits"><i class="fa fa-check"></i><b>21.2.6</b> Getting edits</a></li>
 </ul></li>
-<li class="chapter" data-level="21.6" data-path="distill-fancy.html"><a href="distill-fancy.html#appendix-1"><i class="fa fa-check"></i><b>21.6</b> Appendix</a></li>
-<li class="chapter" data-level="21.7" data-path="distill-fancy.html"><a href="distill-fancy.html#footer"><i class="fa fa-check"></i><b>21.7</b> Footer</a>
+</ul></li>
+<li class="chapter" data-level="22" data-path="distill-fancy.html"><a href="distill-fancy.html"><i class="fa fa-check"></i><b>22</b> Make it fancier</a>
 <ul>
-<li class="chapter" data-level="21.7.1" data-path="distill-fancy.html"><a href="distill-fancy.html#links-1"><i class="fa fa-check"></i><b>21.7.1</b> Links</a></li>
+<li class="chapter" data-level="22.1" data-path="distill-fancy.html"><a href="distill-fancy.html#before-you-begin-3"><i class="fa fa-check"></i><b>22.1</b> Before you begin</a></li>
+<li class="chapter" data-level="22.2" data-path="distill-fancy.html"><a href="distill-fancy.html#anatomy-of-a-fancy-distill-page"><i class="fa fa-check"></i><b>22.2</b> Anatomy of a fancy Distill page</a></li>
+<li class="chapter" data-level="22.3" data-path="distill-fancy.html"><a href="distill-fancy.html#adding-custom-css-to-your-site-1"><i class="fa fa-check"></i><b>22.3</b> Adding custom CSS to your site</a></li>
+<li class="chapter" data-level="22.4" data-path="distill-fancy.html"><a href="distill-fancy.html#aesthetics-and-branding-1"><i class="fa fa-check"></i><b>22.4</b> Aesthetics and branding</a>
+<ul>
+<li class="chapter" data-level="22.4.1" data-path="distill-fancy.html"><a href="distill-fancy.html#google-fonts"><i class="fa fa-check"></i><b>22.4.1</b> Google Fonts</a></li>
+<li class="chapter" data-level="22.4.2" data-path="distill-fancy.html"><a href="distill-fancy.html#larger-logo"><i class="fa fa-check"></i><b>22.4.2</b> Larger logo</a></li>
+</ul></li>
+<li class="chapter" data-level="22.5" data-path="distill-fancy.html"><a href="distill-fancy.html#navbar"><i class="fa fa-check"></i><b>22.5</b> Navbar</a>
+<ul>
+<li class="chapter" data-level="22.5.1" data-path="distill-fancy.html"><a href="distill-fancy.html#more-space-for-the-navbar"><i class="fa fa-check"></i><b>22.5.1</b> More space for the navbar</a></li>
+<li class="chapter" data-level="22.5.2" data-path="distill-fancy.html"><a href="distill-fancy.html#navbar-font-and-text-style"><i class="fa fa-check"></i><b>22.5.2</b> Navbar font and text style</a></li>
+<li class="chapter" data-level="22.5.3" data-path="distill-fancy.html"><a href="distill-fancy.html#transparent-faded-navbar"><i class="fa fa-check"></i><b>22.5.3</b> Transparent, faded navbar</a></li>
+<li class="chapter" data-level="22.5.4" data-path="distill-fancy.html"><a href="distill-fancy.html#animated-hovering"><i class="fa fa-check"></i><b>22.5.4</b> Animated hovering</a></li>
+<li class="chapter" data-level="22.5.5" data-path="distill-fancy.html"><a href="distill-fancy.html#tweak-for-mobile-1"><i class="fa fa-check"></i><b>22.5.5</b> Tweak for mobile</a></li>
+</ul></li>
+<li class="chapter" data-level="22.6" data-path="distill-fancy.html"><a href="distill-fancy.html#appendix-1"><i class="fa fa-check"></i><b>22.6</b> Appendix</a></li>
+<li class="chapter" data-level="22.7" data-path="distill-fancy.html"><a href="distill-fancy.html#footer"><i class="fa fa-check"></i><b>22.7</b> Footer</a>
+<ul>
+<li class="chapter" data-level="22.7.1" data-path="distill-fancy.html"><a href="distill-fancy.html#links-1"><i class="fa fa-check"></i><b>22.7.1</b> Links</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>V Cookbook: Bookdown book</b></span></li>
@@ -486,98 +552,98 @@
 <li class="chapter" data-level="" data-path="intro-bookdown.html"><a href="intro-bookdown.html#pros-and-cons-of-using-bookdown-sites"><i class="fa fa-check"></i>Pros and cons of using bookdown sites</a></li>
 <li class="chapter" data-level="" data-path="intro-bookdown.html"><a href="intro-bookdown.html#is-this-cookbook-for-you-1"><i class="fa fa-check"></i>Is this cookbook for you?</a></li>
 <li class="chapter" data-level="" data-path="intro-bookdown.html"><a href="intro-bookdown.html#learning-resources"><i class="fa fa-check"></i>Learning resources</a></li>
-<li class="chapter" data-level="21.8" data-path="intro-bookdown.html"><a href="intro-bookdown.html#tldr-3"><i class="fa fa-check"></i><b>21.8</b> tl;dr</a></li>
-<li class="chapter" data-level="21.9" data-path="intro-bookdown.html"><a href="intro-bookdown.html#getting-set-up"><i class="fa fa-check"></i><b>21.9</b> Getting set up</a>
+<li class="chapter" data-level="22.8" data-path="intro-bookdown.html"><a href="intro-bookdown.html#tldr-3"><i class="fa fa-check"></i><b>22.8</b> tl;dr</a></li>
+<li class="chapter" data-level="22.9" data-path="intro-bookdown.html"><a href="intro-bookdown.html#getting-set-up"><i class="fa fa-check"></i><b>22.9</b> Getting set up</a>
 <ul>
-<li class="chapter" data-level="21.9.1" data-path="intro-bookdown.html"><a href="intro-bookdown.html#packages-needed"><i class="fa fa-check"></i><b>21.9.1</b> Packages needed</a></li>
-<li class="chapter" data-level="21.9.2" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-proj-first"><i class="fa fa-check"></i><b>21.9.2</b> Make a project</a></li>
-<li class="chapter" data-level="21.9.3" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-site-skeleton"><i class="fa fa-check"></i><b>21.9.3</b> Make a book skeleton</a></li>
+<li class="chapter" data-level="22.9.1" data-path="intro-bookdown.html"><a href="intro-bookdown.html#packages-needed"><i class="fa fa-check"></i><b>22.9.1</b> Packages needed</a></li>
+<li class="chapter" data-level="22.9.2" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-proj-first"><i class="fa fa-check"></i><b>22.9.2</b> Make a project</a></li>
+<li class="chapter" data-level="22.9.3" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-site-skeleton"><i class="fa fa-check"></i><b>22.9.3</b> Make a book skeleton</a></li>
 </ul></li>
-<li class="chapter" data-level="21.10" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-site-orientation"><i class="fa fa-check"></i><b>21.10</b> A mini-orientation</a></li>
-<li class="chapter" data-level="21.11" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-push"><i class="fa fa-check"></i><b>21.11</b> Push to GitHub</a></li>
-<li class="chapter" data-level="21.12" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-output"><i class="fa fa-check"></i><b>21.12</b> Change output directory</a></li>
-<li class="chapter" data-level="21.13" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-nojekyll"><i class="fa fa-check"></i><b>21.13</b> Turn off Jekyll</a></li>
-<li class="chapter" data-level="21.14" data-path="intro-bookdown.html"><a href="intro-bookdown.html#build-book"><i class="fa fa-check"></i><b>21.14</b> Build your book</a></li>
-<li class="chapter" data-level="21.15" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-push2"><i class="fa fa-check"></i><b>21.15</b> Push to GitHub (again)</a></li>
-<li class="chapter" data-level="21.16" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-living"><i class="fa fa-check"></i><b>21.16</b> Make a living, breathing site!</a></li>
-<li class="chapter" data-level="21.17" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-uplevel"><i class="fa fa-check"></i><b>21.17</b> Uplevel your workflow</a></li>
+<li class="chapter" data-level="22.10" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-site-orientation"><i class="fa fa-check"></i><b>22.10</b> A mini-orientation</a></li>
+<li class="chapter" data-level="22.11" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-push"><i class="fa fa-check"></i><b>22.11</b> Push to GitHub</a></li>
+<li class="chapter" data-level="22.12" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-output"><i class="fa fa-check"></i><b>22.12</b> Change output directory</a></li>
+<li class="chapter" data-level="22.13" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-nojekyll"><i class="fa fa-check"></i><b>22.13</b> Turn off Jekyll</a></li>
+<li class="chapter" data-level="22.14" data-path="intro-bookdown.html"><a href="intro-bookdown.html#build-book"><i class="fa fa-check"></i><b>22.14</b> Build your book</a></li>
+<li class="chapter" data-level="22.15" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-push2"><i class="fa fa-check"></i><b>22.15</b> Push to GitHub (again)</a></li>
+<li class="chapter" data-level="22.16" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-living"><i class="fa fa-check"></i><b>22.16</b> Make a living, breathing site!</a></li>
+<li class="chapter" data-level="22.17" data-path="intro-bookdown.html"><a href="intro-bookdown.html#book-uplevel"><i class="fa fa-check"></i><b>22.17</b> Uplevel your workflow</a></li>
 </ul></li>
-<li class="chapter" data-level="22" data-path="book-yours.html"><a href="book-yours.html"><i class="fa fa-check"></i><b>22</b> Make it yours</a>
+<li class="chapter" data-level="23" data-path="book-yours.html"><a href="book-yours.html"><i class="fa fa-check"></i><b>23</b> Make it yours</a>
 <ul>
-<li class="chapter" data-level="22.1" data-path="book-yours.html"><a href="book-yours.html#book-new-ch"><i class="fa fa-check"></i><b>22.1</b> Creating new chapters</a></li>
-<li class="chapter" data-level="22.2" data-path="book-yours.html"><a href="book-yours.html#book-order"><i class="fa fa-check"></i><b>22.2</b> Putting your chapters in order</a></li>
+<li class="chapter" data-level="23.1" data-path="book-yours.html"><a href="book-yours.html#book-new-ch"><i class="fa fa-check"></i><b>23.1</b> Creating new chapters</a></li>
+<li class="chapter" data-level="23.2" data-path="book-yours.html"><a href="book-yours.html#book-order"><i class="fa fa-check"></i><b>23.2</b> Putting your chapters in order</a></li>
 </ul></li>
-<li class="chapter" data-level="23" data-path="book-care.html"><a href="book-care.html"><i class="fa fa-check"></i><b>23</b> Caring for your book</a>
+<li class="chapter" data-level="24" data-path="book-care.html"><a href="book-care.html"><i class="fa fa-check"></i><b>24</b> Caring for your book</a>
 <ul>
-<li class="chapter" data-level="23.1" data-path="book-care.html"><a href="book-care.html#workflow-for-maintenance"><i class="fa fa-check"></i><b>23.1</b> Workflow for maintenance</a></li>
-<li class="chapter" data-level="23.2" data-path="book-care.html"><a href="book-care.html#render-book"><i class="fa fa-check"></i><b>23.2</b> Rendering</a></li>
-<li class="chapter" data-level="23.3" data-path="book-care.html"><a href="book-care.html#use-book"><i class="fa fa-check"></i><b>23.3</b> Using your book</a>
+<li class="chapter" data-level="24.1" data-path="book-care.html"><a href="book-care.html#workflow-for-maintenance"><i class="fa fa-check"></i><b>24.1</b> Workflow for maintenance</a></li>
+<li class="chapter" data-level="24.2" data-path="book-care.html"><a href="book-care.html#render-book"><i class="fa fa-check"></i><b>24.2</b> Rendering</a></li>
+<li class="chapter" data-level="24.3" data-path="book-care.html"><a href="book-care.html#use-book"><i class="fa fa-check"></i><b>24.3</b> Using your book</a>
 <ul>
-<li class="chapter" data-level="23.3.1" data-path="book-care.html"><a href="book-care.html#components"><i class="fa fa-check"></i><b>23.3.1</b> Components</a></li>
-<li class="chapter" data-level="23.3.2" data-path="book-care.html"><a href="book-care.html#search"><i class="fa fa-check"></i><b>23.3.2</b> Search</a></li>
+<li class="chapter" data-level="24.3.1" data-path="book-care.html"><a href="book-care.html#components"><i class="fa fa-check"></i><b>24.3.1</b> Components</a></li>
+<li class="chapter" data-level="24.3.2" data-path="book-care.html"><a href="book-care.html#search"><i class="fa fa-check"></i><b>24.3.2</b> Search</a></li>
 </ul></li>
-<li class="chapter" data-level="23.4" data-path="book-care.html"><a href="book-care.html#hiding-chapters"><i class="fa fa-check"></i><b>23.4</b> Hiding Chapters</a></li>
-<li class="chapter" data-level="23.5" data-path="book-care.html"><a href="book-care.html#book-organized"><i class="fa fa-check"></i><b>23.5</b> Staying organized</a></li>
+<li class="chapter" data-level="24.4" data-path="book-care.html"><a href="book-care.html#hiding-chapters"><i class="fa fa-check"></i><b>24.4</b> Hiding Chapters</a></li>
+<li class="chapter" data-level="24.5" data-path="book-care.html"><a href="book-care.html#book-organized"><i class="fa fa-check"></i><b>24.5</b> Staying organized</a></li>
 </ul></li>
-<li class="chapter" data-level="24" data-path="book-dress.html"><a href="book-dress.html"><i class="fa fa-check"></i><b>24</b> Dress it up!</a>
+<li class="chapter" data-level="25" data-path="book-dress.html"><a href="book-dress.html"><i class="fa fa-check"></i><b>25</b> Dress it up!</a>
 <ul>
-<li class="chapter" data-level="24.1" data-path="book-dress.html"><a href="book-dress.html#before-book-dress"><i class="fa fa-check"></i><b>24.1</b> Before you begin</a></li>
-<li class="chapter" data-level="24.2" data-path="book-dress.html"><a href="book-dress.html#organizing"><i class="fa fa-check"></i><b>24.2</b> Organizing</a>
+<li class="chapter" data-level="25.1" data-path="book-dress.html"><a href="book-dress.html#before-book-dress"><i class="fa fa-check"></i><b>25.1</b> Before you begin</a></li>
+<li class="chapter" data-level="25.2" data-path="book-dress.html"><a href="book-dress.html#organizing"><i class="fa fa-check"></i><b>25.2</b> Organizing</a>
 <ul>
-<li class="chapter" data-level="24.2.1" data-path="book-dress.html"><a href="book-dress.html#collapse-toc-by-subsections"><i class="fa fa-check"></i><b>24.2.1</b> Collapse TOC by (sub)sections</a></li>
-<li class="chapter" data-level="24.2.2" data-path="book-dress.html"><a href="book-dress.html#change-the-chapter-name"><i class="fa fa-check"></i><b>24.2.2</b> Change the chapter name</a></li>
-<li class="chapter" data-level="24.2.3" data-path="book-dress.html"><a href="book-dress.html#section-unnumbering"><i class="fa fa-check"></i><b>24.2.3</b> Section (un)numbering</a></li>
-<li class="chapter" data-level="24.2.4" data-path="book-dress.html"><a href="book-dress.html#book-parts"><i class="fa fa-check"></i><b>24.2.4</b> Group chapters into parts</a></li>
-<li class="chapter" data-level="24.2.5" data-path="book-dress.html"><a href="book-dress.html#book-appendix"><i class="fa fa-check"></i><b>24.2.5</b> Appendix</a></li>
+<li class="chapter" data-level="25.2.1" data-path="book-dress.html"><a href="book-dress.html#collapse-toc-by-subsections"><i class="fa fa-check"></i><b>25.2.1</b> Collapse TOC by (sub)sections</a></li>
+<li class="chapter" data-level="25.2.2" data-path="book-dress.html"><a href="book-dress.html#change-the-chapter-name"><i class="fa fa-check"></i><b>25.2.2</b> Change the chapter name</a></li>
+<li class="chapter" data-level="25.2.3" data-path="book-dress.html"><a href="book-dress.html#section-unnumbering"><i class="fa fa-check"></i><b>25.2.3</b> Section (un)numbering</a></li>
+<li class="chapter" data-level="25.2.4" data-path="book-dress.html"><a href="book-dress.html#book-parts"><i class="fa fa-check"></i><b>25.2.4</b> Group chapters into parts</a></li>
+<li class="chapter" data-level="25.2.5" data-path="book-dress.html"><a href="book-dress.html#book-appendix"><i class="fa fa-check"></i><b>25.2.5</b> Appendix</a></li>
 </ul></li>
-<li class="chapter" data-level="24.3" data-path="book-dress.html"><a href="book-dress.html#aesthetics"><i class="fa fa-check"></i><b>24.3</b> Aesthetics</a>
+<li class="chapter" data-level="25.3" data-path="book-dress.html"><a href="book-dress.html#aesthetics"><i class="fa fa-check"></i><b>25.3</b> Aesthetics</a>
 <ul>
-<li class="chapter" data-level="24.3.1" data-path="book-dress.html"><a href="book-dress.html#header-and-footer-of-the-toc"><i class="fa fa-check"></i><b>24.3.1</b> Header and footer of the TOC</a></li>
-<li class="chapter" data-level="24.3.2" data-path="book-dress.html"><a href="book-dress.html#code-highlighting"><i class="fa fa-check"></i><b>24.3.2</b> Code highlighting</a></li>
+<li class="chapter" data-level="25.3.1" data-path="book-dress.html"><a href="book-dress.html#header-and-footer-of-the-toc"><i class="fa fa-check"></i><b>25.3.1</b> Header and footer of the TOC</a></li>
+<li class="chapter" data-level="25.3.2" data-path="book-dress.html"><a href="book-dress.html#code-highlighting"><i class="fa fa-check"></i><b>25.3.2</b> Code highlighting</a></li>
 </ul></li>
-<li class="chapter" data-level="24.4" data-path="book-dress.html"><a href="book-dress.html#edits-and-source-code"><i class="fa fa-check"></i><b>24.4</b> Edits and source code</a>
+<li class="chapter" data-level="25.4" data-path="book-dress.html"><a href="book-dress.html#edits-and-source-code"><i class="fa fa-check"></i><b>25.4</b> Edits and source code</a>
 <ul>
-<li class="chapter" data-level="24.4.1" data-path="book-dress.html"><a href="book-dress.html#share-the-source-code"><i class="fa fa-check"></i><b>24.4.1</b> Share the source code</a></li>
+<li class="chapter" data-level="25.4.1" data-path="book-dress.html"><a href="book-dress.html#share-the-source-code"><i class="fa fa-check"></i><b>25.4.1</b> Share the source code</a></li>
 </ul></li>
-<li class="chapter" data-level="24.5" data-path="book-dress.html"><a href="book-dress.html#polishing-and-sharing"><i class="fa fa-check"></i><b>24.5</b> Polishing and sharing</a>
+<li class="chapter" data-level="25.5" data-path="book-dress.html"><a href="book-dress.html#polishing-and-sharing"><i class="fa fa-check"></i><b>25.5</b> Polishing and sharing</a>
 <ul>
-<li class="chapter" data-level="24.5.1" data-path="book-dress.html"><a href="book-dress.html#twitter-and-github"><i class="fa fa-check"></i><b>24.5.1</b> Twitter and GitHub</a></li>
-<li class="chapter" data-level="24.5.2" data-path="book-dress.html"><a href="book-dress.html#add-a-favicon-1"><i class="fa fa-check"></i><b>24.5.2</b> Add a favicon</a></li>
-<li class="chapter" data-level="24.5.3" data-path="book-dress.html"><a href="book-dress.html#book-cover-and-description"><i class="fa fa-check"></i><b>24.5.3</b> Book cover and description</a></li>
+<li class="chapter" data-level="25.5.1" data-path="book-dress.html"><a href="book-dress.html#twitter-and-github"><i class="fa fa-check"></i><b>25.5.1</b> Twitter and GitHub</a></li>
+<li class="chapter" data-level="25.5.2" data-path="book-dress.html"><a href="book-dress.html#add-a-favicon-1"><i class="fa fa-check"></i><b>25.5.2</b> Add a favicon</a></li>
+<li class="chapter" data-level="25.5.3" data-path="book-dress.html"><a href="book-dress.html#book-cover-and-description"><i class="fa fa-check"></i><b>25.5.3</b> Book cover and description</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="book-fancy.html"><a href="book-fancy.html"><i class="fa fa-check"></i><b>25</b> Make it fancier</a>
+<li class="chapter" data-level="26" data-path="book-fancy.html"><a href="book-fancy.html"><i class="fa fa-check"></i><b>26</b> Make it fancier</a>
 <ul>
-<li class="chapter" data-level="25.1" data-path="book-fancy.html"><a href="book-fancy.html#before-you-begin-4"><i class="fa fa-check"></i><b>25.1</b> Before you begin</a></li>
-<li class="chapter" data-level="25.2" data-path="book-fancy.html"><a href="book-fancy.html#anatomy-of-a-fancy-book"><i class="fa fa-check"></i><b>25.2</b> Anatomy of a fancy book</a></li>
-<li class="chapter" data-level="25.3" data-path="book-fancy.html"><a href="book-fancy.html#aesthetics-and-branding-2"><i class="fa fa-check"></i><b>25.3</b> Aesthetics and branding</a>
+<li class="chapter" data-level="26.1" data-path="book-fancy.html"><a href="book-fancy.html#before-you-begin-4"><i class="fa fa-check"></i><b>26.1</b> Before you begin</a></li>
+<li class="chapter" data-level="26.2" data-path="book-fancy.html"><a href="book-fancy.html#anatomy-of-a-fancy-book"><i class="fa fa-check"></i><b>26.2</b> Anatomy of a fancy book</a></li>
+<li class="chapter" data-level="26.3" data-path="book-fancy.html"><a href="book-fancy.html#aesthetics-and-branding-2"><i class="fa fa-check"></i><b>26.3</b> Aesthetics and branding</a>
 <ul>
-<li class="chapter" data-level="25.3.1" data-path="book-fancy.html"><a href="book-fancy.html#align-tool"><i class="fa fa-check"></i><b>25.3.1</b> Align the toolbar line</a></li>
-<li class="chapter" data-level="25.3.2" data-path="book-fancy.html"><a href="book-fancy.html#symmetrical-code-chunks"><i class="fa fa-check"></i><b>25.3.2</b> Symmetrical code chunks</a></li>
-<li class="chapter" data-level="25.3.3" data-path="book-fancy.html"><a href="book-fancy.html#book-font"><i class="fa fa-check"></i><b>25.3.3</b> Google fonts</a></li>
-<li class="chapter" data-level="25.3.4" data-path="book-fancy.html"><a href="book-fancy.html#book-logo"><i class="fa fa-check"></i><b>25.3.4</b> Add a logo</a></li>
-<li class="chapter" data-level="25.3.5" data-path="book-fancy.html"><a href="book-fancy.html#book-link-colors"><i class="fa fa-check"></i><b>25.3.5</b> Custom link colors</a></li>
-<li class="chapter" data-level="25.3.6" data-path="book-fancy.html"><a href="book-fancy.html#book-hero"><i class="fa fa-check"></i><b>25.3.6</b> Add a hero image</a></li>
+<li class="chapter" data-level="26.3.1" data-path="book-fancy.html"><a href="book-fancy.html#align-tool"><i class="fa fa-check"></i><b>26.3.1</b> Align the toolbar line</a></li>
+<li class="chapter" data-level="26.3.2" data-path="book-fancy.html"><a href="book-fancy.html#symmetrical-code-chunks"><i class="fa fa-check"></i><b>26.3.2</b> Symmetrical code chunks</a></li>
+<li class="chapter" data-level="26.3.3" data-path="book-fancy.html"><a href="book-fancy.html#book-font"><i class="fa fa-check"></i><b>26.3.3</b> Google fonts</a></li>
+<li class="chapter" data-level="26.3.4" data-path="book-fancy.html"><a href="book-fancy.html#book-logo"><i class="fa fa-check"></i><b>26.3.4</b> Add a logo</a></li>
+<li class="chapter" data-level="26.3.5" data-path="book-fancy.html"><a href="book-fancy.html#book-link-colors"><i class="fa fa-check"></i><b>26.3.5</b> Custom link colors</a></li>
+<li class="chapter" data-level="26.3.6" data-path="book-fancy.html"><a href="book-fancy.html#book-hero"><i class="fa fa-check"></i><b>26.3.6</b> Add a hero image</a></li>
 </ul></li>
-<li class="chapter" data-level="25.4" data-path="book-fancy.html"><a href="book-fancy.html#usability"><i class="fa fa-check"></i><b>25.4</b> Usability</a>
+<li class="chapter" data-level="26.4" data-path="book-fancy.html"><a href="book-fancy.html#usability"><i class="fa fa-check"></i><b>26.4</b> Usability</a>
 <ul>
-<li class="chapter" data-level="25.4.1" data-path="book-fancy.html"><a href="book-fancy.html#custom-div-tips"><i class="fa fa-check"></i><b>25.4.1</b> Custom div tips</a></li>
-<li class="chapter" data-level="25.4.2" data-path="book-fancy.html"><a href="book-fancy.html#book-anchor"><i class="fa fa-check"></i><b>25.4.2</b> Anchor links</a></li>
-<li class="chapter" data-level="25.4.3" data-path="book-fancy.html"><a href="book-fancy.html#copy-to-clipboard"><i class="fa fa-check"></i><b>25.4.3</b> Copy to clipboard</a></li>
+<li class="chapter" data-level="26.4.1" data-path="book-fancy.html"><a href="book-fancy.html#custom-div-tips"><i class="fa fa-check"></i><b>26.4.1</b> Custom div tips</a></li>
+<li class="chapter" data-level="26.4.2" data-path="book-fancy.html"><a href="book-fancy.html#book-anchor"><i class="fa fa-check"></i><b>26.4.2</b> Anchor links</a></li>
+<li class="chapter" data-level="26.4.3" data-path="book-fancy.html"><a href="book-fancy.html#copy-to-clipboard"><i class="fa fa-check"></i><b>26.4.3</b> Copy to clipboard</a></li>
 </ul></li>
-<li class="chapter" data-level="25.5" data-path="book-fancy.html"><a href="book-fancy.html#table-of-contents-1"><i class="fa fa-check"></i><b>25.5</b> Table of Contents</a>
+<li class="chapter" data-level="26.5" data-path="book-fancy.html"><a href="book-fancy.html#table-of-contents-1"><i class="fa fa-check"></i><b>26.5</b> Table of Contents</a>
 <ul>
-<li class="chapter" data-level="25.5.1" data-path="book-fancy.html"><a href="book-fancy.html#change-toc-background-color"><i class="fa fa-check"></i><b>25.5.1</b> Change TOC background color</a></li>
-<li class="chapter" data-level="25.5.2" data-path="book-fancy.html"><a href="book-fancy.html#style-the-toc-links"><i class="fa fa-check"></i><b>25.5.2</b> Style the TOC links</a></li>
-<li class="chapter" data-level="25.5.3" data-path="book-fancy.html"><a href="book-fancy.html#hierarchy-styling"><i class="fa fa-check"></i><b>25.5.3</b> Hierarchy styling</a></li>
+<li class="chapter" data-level="26.5.1" data-path="book-fancy.html"><a href="book-fancy.html#change-toc-background-color"><i class="fa fa-check"></i><b>26.5.1</b> Change TOC background color</a></li>
+<li class="chapter" data-level="26.5.2" data-path="book-fancy.html"><a href="book-fancy.html#style-the-toc-links"><i class="fa fa-check"></i><b>26.5.2</b> Style the TOC links</a></li>
+<li class="chapter" data-level="26.5.3" data-path="book-fancy.html"><a href="book-fancy.html#hierarchy-styling"><i class="fa fa-check"></i><b>26.5.3</b> Hierarchy styling</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>VI Cookbook: Blogdown sites</b></span></li>
 <li class="chapter" data-level="" data-path="intro-blogdown.html"><a href="intro-blogdown.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="26" data-path="make-blogdown.html"><a href="make-blogdown.html"><i class="fa fa-check"></i><b>26</b> Make a site</a></li>
-<li class="chapter" data-level="27" data-path="make-a-site-for-a-workshop.html"><a href="make-a-site-for-a-workshop.html"><i class="fa fa-check"></i><b>27</b> Make a site for a workshop</a></li>
-<li class="chapter" data-level="28" data-path="make-a-site-for-a-course.html"><a href="make-a-site-for-a-course.html"><i class="fa fa-check"></i><b>28</b> Make a site for a course</a></li>
-<li class="chapter" data-level="29" data-path="make-it-fancier-4.html"><a href="make-it-fancier-4.html"><i class="fa fa-check"></i><b>29</b> Make it fancier</a></li>
+<li class="chapter" data-level="27" data-path="make-blogdown.html"><a href="make-blogdown.html"><i class="fa fa-check"></i><b>27</b> Make a site</a></li>
+<li class="chapter" data-level="28" data-path="make-a-site-for-a-workshop.html"><a href="make-a-site-for-a-workshop.html"><i class="fa fa-check"></i><b>28</b> Make a site for a workshop</a></li>
+<li class="chapter" data-level="29" data-path="make-a-site-for-a-course.html"><a href="make-a-site-for-a-course.html"><i class="fa fa-check"></i><b>29</b> Make a site for a course</a></li>
+<li class="chapter" data-level="30" data-path="make-it-fancier-4.html"><a href="make-it-fancier-4.html"><i class="fa fa-check"></i><b>30</b> Make it fancier</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="css-crash.html"><a href="css-crash.html"><i class="fa fa-check"></i><b>A</b> CSS Crash Course</a>
 <ul>
@@ -632,8 +698,229 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="images/books.jpg">
 </div>
-<div id="make-a-site-for-a-workshop" class="section level1 hasAnchor" number="27">
-<h1><span class="header-section-number">Chapter 27</span> Make a site for a workshop<a href="make-a-site-for-a-workshop.html#make-a-site-for-a-workshop" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="make-distill" class="section level1 hasAnchor" number="18">
+<h1><span class="header-section-number">Chapter 18</span> Make a Distill site<a href="make-distill.html#make-distill" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="images/illos/distill-make.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<div id="tldr-2" class="section level2 hasAnchor" number="18.1">
+<h2><span class="header-section-number">18.1</span> tl;dr<a href="make-distill.html#tldr-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This tl;dr is for readers who are already experienced with GitHub and want to see our “cheatsheet” version of the rest of this chapter. If you are looking for screenshots plus some hand-holding, we think you’ll benefit from reading the <a href="make-distill.html#distill-site-setup">rest</a> of this chapter.</p>
+<p><strong>Here’s how you make an Distill site from scratch, using a built-in site skeleton as a template:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Start with an empty RStudio project linked to a remote GitHub repository that you can push/pull from your local copy in RStudio.</p></li>
+<li><p>Make sure the Distill package is installed:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="make-distill.html#cb1-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;rstudio/distill&quot;</span>)</span></code></pre></div></li>
+<li><p>In your project, create a simple shell for a Distill website by running the following code in your R console and entering a same for your site when prompted:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="make-distill.html#cb2-1" aria-hidden="true" tabindex="-1"></a>distill<span class="sc">::</span><span class="fu">create_website</span>(<span class="at">dir =</span> <span class="fu">getwd</span>(), <span class="at">gh_pages =</span> <span class="cn">TRUE</span>)</span></code></pre></div></li>
+<li><p>Build your site using the RStudio “Build” pane.</p></li>
+<li><p>Push and commit to send your site online to GitHub- do you see your <code>.html</code> files in the <code>"docs"</code> folder?</p></li>
+<li><p>Turn on GitHub Pages by going to your repository online. Click on the repository’s settings and under GitHub Pages, change the Source to be the <code>master branch /docs</code> folder. Note your new site’s URL!</p></li>
+<li><p>Edit your site, build it, then push and commit to GitHub to publish your changes online.</p></li>
+<li><p>Rinse and repeat! Every push to your <code>master</code> branch triggers the online version of your site to update.</p></li>
+</ol>
+</div>
+<div id="distill-site-setup" class="section level2 hasAnchor" number="18.2">
+<h2><span class="header-section-number">18.2</span> Getting set up<a href="make-distill.html#distill-site-setup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="images/illos/Gears.jpg" width="20%" style="display: block; margin: auto;" /></p>
+<div id="packages-1" class="section level3 hasAnchor" number="18.2.1">
+<h3><span class="header-section-number">18.2.1</span> Packages<a href="make-distill.html#packages-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The <code>distill</code> package needs to be installed from CRAN. You only need to do this once per computer.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="make-distill.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;distill&quot;</span>)</span></code></pre></div>
+<!--
+If you'll want to add a `README` to your Distill site GitHub repo, then you should also install the `xfun` package so that the step for rendering your site becomes more convenient. 
+
+:::tip
+As another tip, if you're used to using `install.packages()` for CRAN packages, try using [`pak`](https://github.com/r-lib/pak) instead for installs. It's more efficient.
+
+
+```r
+install.packages("pak")
+pak::pkg_install("xfun")
+```
+:::
+
+-->
+</div>
+<div id="distill-proj-first" class="section level3 hasAnchor" number="18.2.2">
+<h3><span class="header-section-number">18.2.2</span> Make a project<a href="make-distill.html#distill-proj-first" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For your first Distill site, we recommend starting by creating a GitHub repository online first, then making a project in RStudio (if this is not your first rodeo, then you could checkout out the <a href="#uplevel-distill">more advanced GitHub last workflow</a>).</p>
+<p>We recommend following the tips on <a href="https://happygitwithr.com/new-github-first.html">Happy Git with R</a> and starting in GitHub before switching to RStudio:</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://happygitwithr.com/new-github-first.html#make-a-repo-on-github-2"><strong>Create a new repository on GitHub</strong></a> for your work.</p>
+<ul>
+<li>Do <em>not</em> initialize the repo with a <code>.gitignore</code> or a <code>README</code> file (we’ll add these later!).<br />
+<br></li>
+</ul></li>
+<li><p><strong>Copy the repository URL</strong> to your clipboard.</p>
+<ul>
+<li><p>Do this by clicking the green Clone or Download button.</p></li>
+<li><p>Copy the HTTPS clone URL (looks like: <code>https://github.com/{yourname}/{yourrepo}.git</code>).</p></li>
+<li><p><strong>Or</strong> copy the SSH URL if you chose to set up SSH keys (looks like: <code>git@github.com:{yourname}/{yourrepo}.git</code>).<br />
+<br></p></li>
+</ul></li>
+<li><p><a href="https://happygitwithr.com/new-github-first.html#new-rstudio-project-via-git-clone">Create a new RStudio Project via git clone</a>. <strong>Open RStudio.</strong></p>
+<ul>
+<li><p>Do this by clicking <em>File</em> &gt; <em>New Project</em> &gt; <em>Version Control</em>&gt; <em>Git</em>.</p></li>
+<li><p>Paste the copied URL.</p></li>
+<li><p>Be intentional about where you tell RStudio to create this new Project.<br />
+<br></p></li>
+</ul></li>
+<li><p><strong>Click Create Project.</strong></p></li>
+</ol>
+<div class="tip">
+<p>Follow these instructions from <a href="https://happygitwithr.com/">Happy Git with R</a> to start with a new repo on <a href="https://happygitwithr.com/new-github-first.html#gitlab">GitLab</a> or <a href="https://happygitwithr.com/new-github-first.html#bitbucket">Bitbucket</a>, instead of GitHub.</p>
+</div>
+</div>
+<div id="distill-site-skeleton" class="section level3 hasAnchor" number="18.2.3">
+<h3><span class="header-section-number">18.2.3</span> Make a Distill site skeleton<a href="make-distill.html#distill-site-skeleton" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We’ll start by creating the shell for a basic Distill website and publishing this site to GitHub Pages straight away. In your R console, type and run the following code, entering a same for your site when prompted:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="make-distill.html#cb4-1" aria-hidden="true" tabindex="-1"></a>distill<span class="sc">::</span><span class="fu">create_website</span>(<span class="at">dir =</span> <span class="fu">getwd</span>(), <span class="at">gh_pages =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p><br />
+</p>
+<div class="split">
+<div class="split1">
+<p>You will end up with these files in your project. The most critical files are the <code>index.Rmd</code> and the <code>_site.yml</code>, and we mention a little about them below.</p>
+</div>
+<div class="split2">
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="make-distill.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="at">.</span></span>
+<span id="cb5-2"><a href="make-distill.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">├── .Rproj.user</span></span>
+<span id="cb5-3"><a href="make-distill.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">├── .nojekyll</span></span>
+<span id="cb5-4"><a href="make-distill.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">├── _site.yml</span></span>
+<span id="cb5-5"><a href="make-distill.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">├── about.Rmd</span></span>
+<span id="cb5-6"><a href="make-distill.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">├── docs</span></span>
+<span id="cb5-7"><a href="make-distill.html#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">├── index.Rmd</span></span>
+<span id="cb5-8"><a href="make-distill.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="at">└── mydistillsite.Rproj</span></span></code></pre></div>
+</div>
+</div>
+<p><br />
+</p>
+<p>Close RStudio and re-open your site by clicking on the project file (<code>.Rproj</code>).</p>
+<div class="rstudio-tip">
+<p>When you re-open the project, you may notice the <code>.Rproj</code> file shows up in your Git pane, which means that the file has changed since your last commit. What happened? RStudio has detected that you have built a website, so a single line has been added to your <code>.Rproj</code> file:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb6-1"><a href="make-distill.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">BuildType</span><span class="kw">:</span><span class="at"> Website</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="distill-site-orientation" class="section level2 hasAnchor" number="18.3">
+<h2><span class="header-section-number">18.3</span> A mini-orientation<a href="make-distill.html#distill-site-orientation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Our project directory now has four new important items. Open and take a peek at each file as we touch on the them below:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong><code>index.Rmd</code></strong>: This will be our site’s homepage. This file <em>must</em> be named <code>index.Rmd</code>, and it <em>must</em> at minimum have <code>title:</code>, <code>description:</code>, and <code>site: distill::distill_website</code> fields.</p></li>
+<li><p><strong><code>about.Rmd</code></strong>: This will be an additional page on our site, and you can change the name of this file to be whatever you want. Additional pages, like this one, at a minimum need to have a non-empty <code>title:</code>, but they don’t require a <code>description:</code> or <code>site:</code> line.</p></li>
+<li><p><strong><code>_site.yml</code></strong> is <em>not</em> a file that gets turned into a site page, but it <em>is</em> necessary for site setup. In general, the <code>_site.yml</code> file lets us set options that will affect all pages in our site, and it has the same function here as it does in a typical R Markdown site. A few things you’ll notice about this YAML, if you’re comparing it to an R Markdown site’s:</p>
+<p><!-- TODO: use ymlthis --></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="make-distill.html#cb7-1" aria-hidden="true" tabindex="-1"></a>name<span class="sc">:</span> <span class="st">&quot;basic-course-distill&quot;</span></span>
+<span id="cb7-2"><a href="make-distill.html#cb7-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">&quot;Demo Website&quot;</span></span>
+<span id="cb7-3"><a href="make-distill.html#cb7-3" aria-hidden="true" tabindex="-1"></a>description<span class="sc">:</span> <span class="er">|</span></span>
+<span id="cb7-4"><a href="make-distill.html#cb7-4" aria-hidden="true" tabindex="-1"></a>  Demo Website</span>
+<span id="cb7-5"><a href="make-distill.html#cb7-5" aria-hidden="true" tabindex="-1"></a>output_dir<span class="sc">:</span> <span class="st">&quot;docs&quot;</span></span>
+<span id="cb7-6"><a href="make-distill.html#cb7-6" aria-hidden="true" tabindex="-1"></a>navbar<span class="sc">:</span></span>
+<span id="cb7-7"><a href="make-distill.html#cb7-7" aria-hidden="true" tabindex="-1"></a>  right<span class="sc">:</span></span>
+<span id="cb7-8"><a href="make-distill.html#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> text<span class="sc">:</span> <span class="st">&quot;Home&quot;</span></span>
+<span id="cb7-9"><a href="make-distill.html#cb7-9" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> index.html</span>
+<span id="cb7-10"><a href="make-distill.html#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> text<span class="sc">:</span> <span class="st">&quot;About&quot;</span></span>
+<span id="cb7-11"><a href="make-distill.html#cb7-11" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> about.html</span>
+<span id="cb7-12"><a href="make-distill.html#cb7-12" aria-hidden="true" tabindex="-1"></a>output<span class="sc">:</span> distill<span class="sc">::</span>distill_article</span></code></pre></div>
+<p>The output here has to be <code>distill::distill_article</code>. It’s okay for this to be on the same line as <code>output:</code> or indented on the line beneath it.</p>
+<p>Weirdly, the <code>description:</code> field in <code>_site.yml</code> is non-functional (as far as we can tell). But we will use it to create a subtitle of sorts in other YAMLS of our other Distill pages.</p></li>
+<li><p><strong><code>docs/</code> folder</strong>: This is the output folder, where knitted versions of our <code>.Rmd</code>s live once they’ve been processed to become <code>.html</code> files.</p></li>
+</ol>
+<p>Nothing else to do here, just good info to know. We’ll be circling back to these files later.</p>
+</div>
+<div id="distill-push" class="section level2 hasAnchor" number="18.4">
+<h2><span class="header-section-number">18.4</span> Push to GitHub<a href="make-distill.html#distill-push" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Let’s get these website files pushed up to our remote repository on GitHub. Do the following from RStudio:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Click <em>Git</em> </strong> in the same RStudio pane that also contains the <em>Environment</em> tab.</p></li>
+<li><p><strong>Check the box(es)</strong> under the “Staged” column and click <em>Commit</em>.</p></li>
+<li><p><strong>Add a commit message</strong> like “initial commit” and then click <em>Push</em>.</p></li>
+</ol>
+<!-- TODO: Update w/ screenshot: <center>![](images/rmd_custom/git1.png){width=400px}<center>
+-->
+</div>
+<div id="distill-site-build" class="section level2 hasAnchor" number="18.5">
+<h2><span class="header-section-number">18.5</span> Build your site<a href="make-distill.html#distill-site-build" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="make-distill.html#make-distill" target="_blank"><img src="images/illos/Build.jpg" style="display: block; margin: auto;" /></a></p>
+<p>In the lifecycle of your Distill site, you’ll be doing lots of building. What does building the site do? This processes your <code>.Rmd</code>s and creates the <code>docs/</code> folder (if it doesn’t already exist), which houses <code>.html</code> versions of each of your <code>.Rmd</code> files. AND each of these pages now has a common navigation bar at the top that links your site together (this is thanks to our <code>_site.yml</code> file–but more on that later).</p>
+<p>In RStudio, you can render your site locally (knit + preview all <code>.Rmd</code> files in one fell swoop) from the either the IDE or the R console.</p>
+<div class="split">
+<div class="split1">
+<p><em>From the R console</em>, you can run:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="make-distill.html#cb8-1" aria-hidden="true" tabindex="-1"></a>rmarkdown<span class="sc">::</span><span class="fu">render_site</span>()</span></code></pre></div>
+</div>
+<div class="split2">
+<p><strong>OR</strong> <em>from the IDE</em>, find the Build tab and select <strong>Build Website</strong>:</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-19"></span>
+<a href="https://bookdown.org/yihui/rmarkdown/" target="_blank"><img src="https://bookdown.org/yihui/rmarkdown/images/site-build.png" alt="The build pane in RStudio"  /></a>
+<p class="caption">
+Figure 18.1: The build pane in RStudio
+</p>
+</div>
+</div>
+</div>
+<div class="tip">
+<p>If the rendered site does not open up automatically in a new window, you can go to the <code>docs/</code> folder in your project, click on the <code>index.html</code> file, and <code>View it in Web Browser</code>.</p>
+</div>
+</div>
+<div id="distill-push2" class="section level2 hasAnchor" number="18.6">
+<h2><span class="header-section-number">18.6</span> Push to GitHub (again)<a href="make-distill.html#distill-push2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Let’s get these <em>new</em> Distill website files pushed up to our remote repository on GitHub. If you want your site to have the most recent updates you’ve made, then every single <code>.Rmd</code> file with a change must be built right <em>before</em> pushing to GitHub. Using either the build pane or <code>rmarkdown::render_site()</code>, you don’t need to knit each <code>.Rmd</code> file one at a time, but you do need to build your site locally first every time.</p>
+<div class="tip">
+<p>Watch out! Each time you run <code>rmarkdown::render_site()</code>, the <code>docs/</code> folder will be overwritten with updated HTML versions of your <code>.Rmd</code>s. This means DON’T EVER EDIT FILES IN THE <code>docs/</code> FOLDER! Nothing catastrophic will happen if you do, but you will overwrite and lose all your changes the next time you knit or <code>render_site()</code>.</p>
+</div>
+<p>Go ahead and stage all your changed files, commit, and push to GitHub.</p>
+<p>Now we’ll get to the good stuff! Let’s put this on the internet!</p>
+</div>
+<div id="distill-living" class="section level2 hasAnchor" number="18.7">
+<h2><span class="header-section-number">18.7</span> Make a living, breathing site!<a href="make-distill.html#distill-living" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="images/illos/distill-live.jpg" width="65%" style="display: block; margin: auto;" /></p>
+<p>We have built some out-of-the-box content and pushed to GitHub. Now we’ll go back to the GitHub website and tell it where to find our website-ready files:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Back on GitHub, click the <em>Settings</em> tab</strong> of your project repository.</p></li>
+<li><p><strong>Scroll down</strong> until you get to “GitHub Pages” and select “master branch/docs folder”. (This is why we had to set up <code>output_dir: docs</code> in our <code>site.yml</code> file previously. If your file doesn’t end up in the <code>docs/</code> folder, GitHub pages won’t find it.)</p></li>
+</ol>
+<center>
+<img src="images/rmd_custom/githubpages.png" width="600" />
+</center>
+<p><br />
+</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p><strong>Congratulations! A url is generated</strong>–this is your website address. You can share it, tweet it, send it to your mom–it’s now live!</p></li>
+<li><p><strong>Add this url to the repo description</strong> so that it’s easy to find.</p></li>
+</ol>
+<center>
+<img src="images/rmd_custom/url.png" style="width:80.0%" />
+</center>
+<p><br />
+<br />
+</p>
+<p>Now that the bare bones of the site are up, you can go back and add more content to your Distill documents anytime. Your changes will go live as soon as you build or <code>render_site()</code>, followed by a push to GitHub.</p>
+</div>
+<div id="distill-uplevel" class="section level2 hasAnchor" number="18.8">
+<h2><span class="header-section-number">18.8</span> Uplevel your workflow<a href="make-distill.html#distill-uplevel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We followed a “GitHub first” workflow above, but if you’ll be using GitHub regularly, we recommend evolving this workflow.</p>
+<p>First, install the <a href="https://usethis.r-lib.org/"><code>usethis</code> package</a>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="make-distill.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;usethis&quot;</span>)</span></code></pre></div>
+<p>Then load it to use it:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="make-distill.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span></code></pre></div>
+<p><br />
+</p>
+<p>Now, follow the instructions from <a href="https://happygitwithr.com/github-pat.html">Happy Git with R for setting up a GitHub personal access token or PAT</a>.</p>
+<div class="gotcha">
+<p>Be sure to restart your R session after setting up the PAT, and pay close attention that your <code>.Renviron</code> file has at least one empty line at the bottom.</p>
+</div>
+<p><br />
+</p>
+<p>Once you have a GitHub PAT set up in your <code>.Renviron</code> file, you can stay in the comfort of your project in the RStudio IDE to do all the GitHub things we were doing before online in your browser.</p>
+<p>Now, here is your advanced workflow for creating a new Distill site inside a project:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Click</strong> <em>File</em> &gt; <em>New Project</em> &gt; <em>New Directory</em></p></li>
+<li><p><strong>Scroll down and select</strong> <em>Distill Website</em>, and check the box to “Configure for GitHub Pages”</p></li>
+<li><p>Then use your R console to <strong>run</strong> this code:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="make-distill.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git</span>()</span>
+<span id="cb11-2"><a href="make-distill.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use_github</span>() <span class="co"># you have to have a PAT setup</span></span></code></pre></div></li>
+</ol>
+
+</div>
 </div>
 <hr>
 <center> 
@@ -649,8 +936,8 @@
           </div>
         </div>
       </div>
-<a href="make-blogdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="make-a-site-for-a-course.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="intro-distill.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="distill-yours.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -681,7 +968,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio4edu/rstudio4edu-book/edit/master/cookbook-blogdown.Rmd",
+"link": "https://github.com/rstudio4edu/rstudio4edu-book/edit/master/cookbook-distill.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -692,7 +979,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/rstudio4edu/rstudio4edu-book/raw/master/cookbook-blogdown.Rmd"],
+"download": ["https://github.com/rstudio4edu/rstudio4edu-book/raw/master/cookbook-distill.Rmd"],
 "search": {
 "engine": "fuse",
 "options": null
